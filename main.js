@@ -2,6 +2,12 @@
 // #ifndef VUE3
 import Vue from 'vue'
 import App from './App'
+// 导入vuex
+import store from './store'
+
+// 导入uView
+import uView from "uview-ui";
+Vue.use(uView);
 
 Vue.config.productionTip = false
 

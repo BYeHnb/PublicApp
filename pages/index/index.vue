@@ -1,9 +1,17 @@
 <template>
 	<view class="container">
+		// 1.0.0版本开始，支持使用uni-link组件，可以在小程序端使用open-type属性
+		<uni-link :href="href" open-type="navigate">
+			<view>uni-link组件</view>
+		</uni-link>
+		// 写一个a标签，可以在小程序端使用open-type属性
+
+		<a :href="href" open-type="navigate">
+			<view>a标签</view>
+		</a>
+		// 写一个view标签，可以在小程序端使用open-type属性
 		
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
-		<text class="intro">详见：</text>
-		<uni-link :href="href" :text="href"></uni-link>
+		
 	</view>
 </template>
 
